@@ -1,5 +1,5 @@
 {{#if updateEntryForm}}
-  <h4>Update {{entry.title}} {{entry.author}}</h4>
+  <h4>Update: {{entry.title}}</h4>
   <div>
     <form>
       <div class="form-group">
@@ -31,5 +31,5 @@
     </form>
   </div>
 {{else}}
-  <button class="btn btn-info"{{action 'updateEntryForm'}}>Update</button>
+  <button class="btn btn-info" id="updatebtn"{{action 'updateEntryForm'}}>Update</button>
 {{/if}}

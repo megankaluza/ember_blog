@@ -6,10 +6,11 @@
   <img src="{{entry.image}}" width="700px">
   <br>
   <div class="content">
+    <h2>Read More Below:</h2>
     {{entry.content}}
-  </div>
-  <br>
+  <hr>
   {{update-entry entry=entry update="update"}}
-  <button class="btn btn-danger" float="right" {{action 'delete' entry}}>Delete</button>
+  <button class="btn btn-danger" id="deletebtn" float="right" {{action 'delete' entry}}>Delete</button>
+</div>
   <hr>
 </li>
