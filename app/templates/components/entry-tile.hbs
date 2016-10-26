@@ -3,15 +3,13 @@
 <br>
   <h2>Published By: {{entry.author}}</h2>
 <hr>
-  <img src="{{entry.image}}" width="400px">
+  <img src="{{entry.image}}" width="700px">
   <br>
   <div class="content">
     {{entry.content}}
   </div>
-<br>
-  {{entry.type}}
   <br>
   {{update-entry entry=entry update="update"}}
-  <button class="btn btn-warning" {{action 'delete' entry}}>Delete</button>
+  <button class="btn btn-danger" float="right" {{action 'delete' entry}}>Delete</button>
   <hr>
 </li>

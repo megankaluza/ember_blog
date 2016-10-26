@@ -1,7 +1,7 @@
 <header class="jumbotron">
   <h1>Alien Translation</h1>
 </header>
-<div class="panel">
+<div>
 <ul>
   {{#each model as |entry|}}
   {{entry-tile entry=entry update="update" destroyEntry="destroyEntry"}}
@@ -9,6 +9,3 @@
 </ul>
 </div>
 {{new-entry saveEntry2="saveEntry3"}}
-
-{{#link-to 'about'}} About {{/link-to}}
-{{#link-to 'contact'}} Click here to contact us {{/link-to}}

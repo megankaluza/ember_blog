@@ -5,8 +5,17 @@ body {
   text-align: center;
 }
 
+button {
+  margin: 3%;
+}
+
 h1 {
   font-family: 'Sigmar One', cursive;
+}
+
+h2,
+a {
+  font-family: 'Orbitron', sans-serif;
 }
 
 ul,
@@ -14,15 +23,29 @@ li {
   list-style-type: none;
 }
 
-.content {
-  width: 500px;
-  margin-top: 4%;
+.about {
+  width: 700px;
   margin-left: 35%;
+}
+
+.alien {
+  width: 600px;
+}
+
+.content {
+  width: 700px;
+  background-color: $alien;
+  box-shadow: 5px 5px 10px black;
+  margin-top: 4%;
+  margin-left: 30%;
   padding: 3%;
-  border: 1px solid black;
 }
 
 .jumbotron {
   background-color: $alien;
   opacity: 0.5;
+}
+
+img {
+  box-shadow: 5px 5px 20px black;
 }
