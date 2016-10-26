@@ -31,6 +31,16 @@ li {
   list-style-type: none;
 }
 
+img {
+  box-shadow: 5px 5px 20px black;
+}
+
+footer {
+  background-image: url(http://i.telegraph.co.uk/multimedia/archive/02357/eso-summary_2357457k.jpg);
+  height: 100px;
+  color: white;
+}
+
 .about {
   width: 700px;
   margin-left: 35%;
@@ -57,7 +67,7 @@ li {
   box-shadow: 5px 5px 10px black;
   margin-top: 2%;
   margin-left: 30%;
-  padding: 3%;
+  padding: 1%;
   color: white;
   position: relative;
   right: 120px;
@@ -67,14 +77,9 @@ li {
 .jumbotron {
   background-color: $alien;
   background-image: url(http://techgenmag.com/wp-content/uploads/2015/04/Radio-waves-deep-space-PS.jpg);
-  // opacity: 0.5;
 }
 
-img {
-  box-shadow: 5px 5px 20px black;
-}
-
-.contactInfo, footer {
+.contactInfo {
   color: white;
 }
 
@@ -88,9 +93,4 @@ img {
   position: relative;
   top: -47.5px;
   left: 150px;
-}
-
-footer {
-  background-image: url(http://i.telegraph.co.uk/multimedia/archive/02357/eso-summary_2357457k.jpg);
-  height: 100px;
 }
