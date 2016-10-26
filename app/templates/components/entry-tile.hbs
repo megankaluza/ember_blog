@@ -1,13 +1,17 @@
 <li>
   <h1>{{entry.title}}</h1>
 <br>
-  {{entry.author}}
-<br>
+  <h2>Published By: {{entry.author}}</h2>
+<hr>
   <img src="{{entry.image}}" width="400px">
   <br>
-  {{entry.content}}
+  <div class="content">
+    {{entry.content}}
+  </div>
 <br>
   {{entry.type}}
   <br>
+  {{update-entry entry=entry update="update"}}
   <button class="btn btn-warning" {{action 'delete' entry}}>Delete</button>
+  <hr>
 </li>

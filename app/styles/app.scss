@@ -1,13 +1,28 @@
+$alien: #B5DEAD;
+
 body {
   width: 100%;
   text-align: center;
 }
 
-header {
-  
+h1 {
+  font-family: 'Sigmar One', cursive;
 }
 
 ul,
 li {
   list-style-type: none;
+}
+
+.content {
+  width: 500px;
+  margin-top: 4%;
+  margin-left: 35%;
+  padding: 3%;
+  border: 1px solid black;
+}
+
+.jumbotron {
+  background-color: $alien;
+  opacity: 0.5;
 }
