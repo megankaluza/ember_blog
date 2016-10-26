@@ -1,0 +1,11 @@
+<header>
+  <h1>Do You Believe?</h1>
+</header>
+<ul>
+  {{#each model as |entry|}}
+  {{entry-tile entry=entry}}
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}} About {{/link-to}}
+{{#link-to 'contact'}} Click here to contact us {{/link-to}}
