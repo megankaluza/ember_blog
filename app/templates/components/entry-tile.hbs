@@ -1,10 +1,13 @@
-
-  {{entry.title}}
-
+<li>
+  <h1>{{entry.title}}</h1>
+<br>
   {{entry.author}}
-
-  {{entry.content}}
-
-  {{entry.type}}
-
+<br>
   <img src="{{entry.image}}" width="400px">
+  <br>
+  {{entry.content}}
+<br>
+  {{entry.type}}
+  <br>
+  <button class="btn btn-warning" {{action 'delete' entry}}>Delete</button>
+</li>

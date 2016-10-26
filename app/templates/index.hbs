@@ -3,9 +3,10 @@
 </header>
 <ul>
   {{#each model as |entry|}}
-  {{entry-tile entry=entry}}
+  {{entry-tile entry=entry destroyEntry="destroyEntry"}}
   {{/each}}
 </ul>
+{{new-entry saveEntry2="saveEntry3"}}
 
 {{#link-to 'about'}} About {{/link-to}}
 {{#link-to 'contact'}} Click here to contact us {{/link-to}}
