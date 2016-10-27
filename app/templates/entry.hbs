@@ -16,5 +16,12 @@
 
 {{new-review saveReview="saveReview" entry=model}}
 
+<ul>
+  <h1>All Reviews</h1>
+  {{#each model.reviews as |review|}}
+    <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
+  {{/each}}
+</ul>
+
 <button class="btn btn-danger" id="deletebtn" float="right" {{action 'delete' model}}>Delete</button>
 </div>
