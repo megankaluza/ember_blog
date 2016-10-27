@@ -3,27 +3,34 @@ $gray: #DED9E2;
 $rose: #EAB4B4;
 $background: #31393C;
 $darkGray: #ADACB5;
+$white: #FFF;
 
 body {
   width: 100%;
   background-color: $background;
   text-align: center;
-  color: white;
-}
+  // color: $white;
+ }
 
 button {
   margin: 2%;
+}
+
+header h1 {
+  color: $white;
 }
 
 h1,
 h4,
 h5 {
   font-family: 'Sigmar One', cursive;
+  color: $white;
 }
 
 h2,
 a {
   font-family: 'Orbitron', sans-serif;
+  color: $white;
 }
 
 ul,
@@ -38,13 +45,13 @@ img {
 footer {
   background-image: url(http://i.telegraph.co.uk/multimedia/archive/02357/eso-summary_2357457k.jpg);
   height: 100px;
-  color: white;
+  color: $white;
 }
 
 .about {
   width: 700px;
   margin-left: 35%;
-  color: white;
+  color: $white;
 }
 
 .alien {
@@ -68,7 +75,7 @@ footer {
   margin-top: 2%;
   margin-left: 30%;
   padding: 1%;
-  color: white;
+  // color: white;
   position: relative;
   right: 120px;
   background-color: $darkGray;
@@ -77,10 +84,6 @@ footer {
 .jumbotron {
   background-color: $alien;
   background-image: url(http://techgenmag.com/wp-content/uploads/2015/04/Radio-waves-deep-space-PS.jpg);
-}
-
-.contactInfo {
-  color: white;
 }
 
 #updatebtn {

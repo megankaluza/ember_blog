@@ -1,15 +1,12 @@
-<li>
-  <h1>{{entry.title}}</h1>
-<br>
-  <h2>Published By: {{entry.author}}</h2>
-  <!-- <img src="{{entry.image}}" width="700px"> -->
-  <br>
-  <div class="content">
-    <h2>Read More Below:</h2>
-    {{entry.content}}
+<ul>
+  <li><h1>{{entry.title}}</h1></li>
+  <li><h2>Published By: {{entry.author}}</h2></li>
+</ul>
+<div class="content">
+  <h2>Read More Below:</h2>
+  {{entry.content}}
   <hr>
   {{update-entry entry=entry update="update"}}
   <button class="btn btn-danger" id="deletebtn" float="right" {{action 'delete' entry}}>Delete</button>
 </div>
-  <hr>
-</li>
+<hr>

@@ -2,9 +2,14 @@
   <h1>Alien Translation</h1>
 </header>
 <ul>
-<li><img src="{{model.image}}" alt="img"></li>
-<li>{{model.title}}</li>
-<li>{{model.author}}</li>
-<li>{{model.content}}</li>
-
+  <li><img src="{{model.image}}" alt="img"></li>
+  <li><h1>{{model.title}}</h1></li>
+  <li><h2>Published By: {{model.author}}</h2></li>
 </ul>
+<div class="content">
+  <h2>Read More Below:</h2>
+  {{model.content}}
+  <hr>
+  {{update-entry entry=model update="update"}}
+  <button class="btn btn-danger" id="deletebtn" float="right" {{action 'delete' model}}>Delete</button>
+</div>
