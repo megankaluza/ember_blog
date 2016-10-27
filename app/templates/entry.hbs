@@ -7,10 +7,9 @@
   <li><h2>Published By: {{model.author}}</h2></li>
 </ul>
 <div class="content">
-  <h2>Read More Below:</h2>
+  <h2>Investigate</h2>
   {{model.content}}
   <hr>
-{{update-entry update="update"}}
 
 {{entry-detail destroyEntry="destroyEntry" destroyReview="destroyReview"}}
 
@@ -22,6 +21,4 @@
     <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
   {{/each}}
 </ul>
-
-<button class="btn btn-danger" id="deletebtn" float="right" {{action 'delete' model}}>Delete</button>
 </div>
