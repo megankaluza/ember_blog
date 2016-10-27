@@ -5,6 +5,7 @@
   <h5>Welcome to our alien conspiracy blog where we allow an outlet for people like you to talk about aliens and get a distraction from your boring, human lives</h5>
 <ul>
   {{#each model as |entry|}}
+  {{#link-to 'entry' entry.id}}<img src="{{entry.image}}" width="700px">{{/link-to}}
   {{entry-tile entry=entry update="update" destroyEntry="destroyEntry"}}
   {{/each}}
 </ul>

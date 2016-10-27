@@ -20,7 +20,7 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
-  app.import('https://fonts.googleapis.com/css?family=Sigmar+One');
+  // app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
+  // app.import('https://fonts.googleapis.com/css?family=Sigmar+One');
   return app.toTree();
 };
