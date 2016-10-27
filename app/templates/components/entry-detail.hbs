@@ -1,0 +1,8 @@
+<h2>Reviews</h2>
+<ul>
+  {{#each entry.reviews as |review|}}
+    {{review-tile review=review destroyReview="destroyReview"}}
+  {{/each}}
+</ul>
+
+<button {{action 'delete' entry}}>Delete</button>

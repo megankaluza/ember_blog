@@ -2,7 +2,10 @@ import Ember from 'ember';
 
   export default Ember.Route.extend({
     model() {
-      return this.store.findAll('entry');
+      return Ember.RSVP.hash({
+        entries: this.store.findAll('entry'),
+        reviews: this.store.findAll('review')
+      });
     },
     actions: {
       saveEntry3(params) {
@@ -10,7 +13,12 @@ import Ember from 'ember';
         newEntry.save();
         this.transitionTo('index');
       },
-
+      // saveReview(params) {
+      //   console.log("in saveReview - index");
+      //   var newReview = this.store.createRecord('review', params);
+      //   newReview.save();
+      //   this.transitionTo('index');
+      // },
       update(entry, params) {
         Object.keys(params).forEach(function(key) {
           if(params[key]!==undefined) {

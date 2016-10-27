@@ -10,6 +10,11 @@
   <h2>Read More Below:</h2>
   {{model.content}}
   <hr>
-  {{update-entry entry=model update="update"}}
-  <button class="btn btn-danger" id="deletebtn" float="right" {{action 'delete' model}}>Delete</button>
+{{update-entry update="update"}}
+
+{{entry-detail destroyEntry="destroyEntry" destroyReview="destroyReview"}}
+
+{{new-review saveReview="saveReview" entry=model}}
+
+<button class="btn btn-danger" id="deletebtn" float="right" {{action 'delete' model}}>Delete</button>
 </div>
